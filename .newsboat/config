@@ -1,0 +1,33 @@
+auto-reload yes
+reload-threads 15
+show-read-feeds no
+# suppress-first-reload yes
+
+# Update every 60 minutes
+reload-time 60
+
+browser "firefox"
+
+show-keymap-hint no
+itemview-title-format "Article '%T'"
+
+
+
+# ---------------------------------------------------------------------------- #
+# Colemak keybindings
+bind-key e up
+unbind-key n
+bind-key n down
+
+unbind-key b
+bind-key b open-in-browser-and-mark-read
+
+unbind-key E
+bind-key E prev-unread-feed
+unbind-key N
+bind-key N next-unread-feed
+
+unbind-key h
+bind-key h toggle-show-read-feeds
+
+
