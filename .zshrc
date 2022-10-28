@@ -1,6 +1,6 @@
 # Set up prompt.
 # Colors are set as Gruv-Box dark, a little too colorful, but whatever. :)
-PS1="%F{#fb4934}[%F{#b8bb26}%n%f%F{#fabd2f}@%F{#fe8019}%M %F{#83a598}%~%f%F{#fb4934}]%F "
+PS1="%F{#c7915b}[%F{#aeee00}%n%f%F{#fade3e}@%F{#ffa724}%M %F{#0a9dff}%~%f%F{#c7915b}]%F "
 autoload -U colors && colors # Load colors
 
 # Basic auto/tab complete:

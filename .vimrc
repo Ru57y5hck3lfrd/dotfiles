@@ -34,7 +34,7 @@ set ignorecase " If all lowercase, case insensitive search
 set smartcase " If one or more upper-case, case sensitive search
 set backspace=start,eol,indent " ability to delete these 
 set shiftwidth=4 tabstop=4 softtabstop=4 expandtab autoindent smartindent
-
+set tw=80 " 80 Character text width
 
 " Cursor change when in different modes mode Settings
 let &t_SI.="\e[5 q" "SI = INSERT mode
