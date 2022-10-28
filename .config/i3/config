@@ -14,7 +14,7 @@ default_floating_border normal
 ################################################################
 
 # font not currently working
-font pango:FreeMono 11
+font pango:Fira Code 11
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -282,16 +282,16 @@ bar {
 	strip_workspace_numbers yes
 
     colors {
-        background #1d2021
+        background #242321
         statusline #F9FAF9
         separator  #454947
 
 #                          border  backgr. text
-        focused_workspace  #595B5B #689d6a #1d2021
+        focused_workspace  #595B5B #aeeeoo #1c1b1a
         active_workspace   #595B5B #000000 #FDF6E3
         inactive_workspace #595B5B #222D31 #ebdbb2
         binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #cc241d #1d2021
+        urgent_workspace   #16a085 #fade3e #1c1b1a
     }
 }
 
@@ -305,16 +305,4 @@ bar {
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
   client.background       #000000
-
-######################################################################################
-# settings for i3-gaps 
-######################################################################################
-
-# Set inner/outer gaps
-# gaps inner 10
-# gaps outer -2
-
-# When only 1 window open it has no gaps.
-smart_gaps on
-smart_borders on
 

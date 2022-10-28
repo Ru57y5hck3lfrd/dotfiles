@@ -1,17 +1,26 @@
 !------------------------
-! Fonts
+! Fonts 
 !------------------------
 !URxvt*faceSize: 11
 URxvt*eightBitInput: false
 
 !!!!! Terminus Font - pacman -S terminus-font
 
-URxvt*font: xft:xos4 Terminus:medium:size=13:antialiasing=false
-URxvt*boldFont: xft:xos4 Terminus:bold:size=13:antialiasing=false:style=medium
+!URxvt*font: xft:xos4 Terminus:medium:size=13:antialiasing=false
+!URxvt*boldFont: xft:xos4 Terminus:bold:size=13:antialiasing=false:style=medium
 
 ! Terminus does not have italics. Monospace is a default font.
-URxvt*italicFont: xft:monospace:italic:pixelsize=17:antialiasing=true:
-URxvt*bolditalicFont: xft:monospace:bolditalic:pixelsize=17:antialiasing=true:
+!URxvt*italicFont: xft:monospace:italic:pixelsize=17:antialiasing=true:
+!URxvt*bolditalicFont: xft:monospace:bolditalic:pixelsize=17:antialiasing=true:
+
+
+! Fira Code (ttf-fira-code)
+URxvt*font: xft:Fira Code:regular:size=12
+URxvt*boldFont: xft:Fira Code:bold:size=12
+URxvt*italicFont: xft:Fira Code:italic:size=12
+URxvt*bolditalicFont: xft:Fira Code:bolditalic:size=12
+
+
 
 
 !This is to fix weird letter spacing with fonts.
@@ -24,40 +33,46 @@ URxvt*scrollBar:  off
 
 
 !-------------------------
-! Colors - Gruvbox
+! Colors - Bad_Wolf 
 !-------------------------
-! Hard contrast: 
-*background: #1d2021
-! Medium contrast
-! *background: #282828
-! Soft contrast:
-! *background: #32302f
+#define blackgravel #1c1b1a
+#define darkgravel #242321
+#define deepgravel #45413b
+#define mediumgravel #666462
+#define gravel #857f78
+#define plain #f8f6f2
+#define lightgravel #998f84
+#define snow #ffffff
+#define taffy #ff2c4b
+#define orange #ffa724
+#define dalespale #fade3e
+#define lime #aeee00
+#define saltwatertaffy #8cffba
+#define tardis #0a9dff
+#define dress #ff9eb8
+#define darkroast #88633f
+#define   coffee           #c7915b
+#define   dirtyblonde      #f4cf86
 
-*foreground: #ebdbb2
-! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
-! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
-! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
-! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
-! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
-! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
-! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
-! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
+*.foreground:   plain
+*.background:   blackgravel
+*.cursorColor:  plain
+*.color0:       blackgravel
+*.color1:       taffy
+*.color2:       lime
+*.color3:       dalespale
+*.color4:       tardis
+*.color5:       dress
+*.color6:       saltwatertaffy
+*.color7:       plain
+*.color8:       mediumgravel
+*.color9:       orange
+*.color10:      coffee
+*.color11:      dirtyblonde
+*.color12:      gravel
+*.color13:      lightgravel
+*.color14:      darkroast
+*.color15:      snow
 
 !--------------------------
 ! Copy / Paste
