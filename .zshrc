@@ -10,8 +10,8 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# Change Default Editor
-export EDITOR='/usr/bin/vim'
+# Change Default Editor to NeoVim
+export EDITOR='/usr/bin/nvim'
 
 # Enable Home/End/Delete and ctrl + Arrow Keys
 # If this doesn't work use "cat" then press the key, replace with outputted string
@@ -31,7 +31,9 @@ setopt hist_ignore_space # Ignore Commands that start with a space
 # Command Alias 
 setopt autocd # no need to type cd before changing directory
 # For colors and all files (excluding . and ..) when using ls
-alias ls="ls --color=auto -A"
+#alias ls="ls --color=auto -A"
+# exa is an ls alternative with better colors.
+alias ls="exa -a"
 # Grep Colors
 alias grep="grep --color=auto"
 # Prompt before overwriting
@@ -47,8 +49,8 @@ alias weather="curl wttr.in"
 alias usb="cd /media/usb_drive"
 # Routine Vimwiki git Push
 alias wikipush="/media/usb_drive/Scripts/wikipush.sh"
-
-
+# Switched to neovim 2022-11-08
+alias vim="nvim"
 # Load syntax highlighting and autosuggestions; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh

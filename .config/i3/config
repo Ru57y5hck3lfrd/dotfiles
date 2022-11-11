@@ -35,7 +35,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+t exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -233,11 +233,6 @@ exec --no-startup-id clipit
 exec --no-startup-id xautolock -time 10 -locker "i3lock -c 000000"
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-
-exec --no-startup-id pkill picom
-exec --no-startup-id picom -b
-exec --no-startup-id setxkbmap us colemak
-exec --no-startup-id xset -dpms; xset -s off &
 
 
 #####################################################################################

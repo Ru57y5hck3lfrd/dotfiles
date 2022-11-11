@@ -6,30 +6,28 @@ nnoremap r i
 nnoremap s o
 nnoremap S O
 nnoremap t A
-    
+
+
+" Testing without these has movement with colemak handled on my keyboard
+" firmware. 
+"
 " Right hand nav
-nnoremap h h
-nnoremap n j
-nnoremap e k
-nnoremap i l
+"nnoremap h h
+"nnoremap n j
+"nnoremap e k
+"nnoremap i l
 
 " Line Movement
 " Move word forward, maybe try alternate white space  
-nnoremap I w
-nnoremap H B
+"nnoremap I w
+"nnoremap H B
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 set mouse=a "Adds mouse functionality
 
-
-"Use tab (alt+tab) instead of escape 
-imap <tab> <esc> 
-
-
 set nocompatible
 syntax on " Syntax highlighting
 filetype indent on 
-filetype plugin on " Allow Plugins
 set ignorecase " If all lowercase, case insensitive search
 set smartcase " If one or more upper-case, case sensitive search
 set backspace=start,eol,indent " ability to delete these 
@@ -53,10 +51,18 @@ set ttimeout
 set ttimeoutlen=1
 set ttyfast
 
+" Plugins
+filetype plugin on " Allow Plugins
+call plug#begin()
+Plug 'vimwiki/vimwiki'
+"testing start
+Plug 'preservim/nerdtree'
+Plug 'lukas-reineke/indent-blankline.nvim'
+"testing end
+call plug#end()
 
 " Sets vimwiki to use reqular markdown instead of vimwiki's markdown
-let g:vimwiki_list = [{'path': '/media/usb_drive/Gits/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
-
+let g:vimwiki_list = [{'path': '/home/harrison/backup/my_gits/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Python PEP-8 standard 79 character marker
 " Also suitable for markdown 80 character standard
