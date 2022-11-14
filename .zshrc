@@ -1,6 +1,6 @@
 # Set up prompt.
+# Colors are set as Gruv-Box dark, a little too colorful, but whatever. :)
 PS1="%F{#c7915b}[%F{#aeee00}%n%f%F{#fade3e}@%F{#ffa724}%M %F{#0a9dff}%~%f%F{#c7915b}]%F "
-
 autoload -U colors && colors # Load colors
 
 # Basic auto/tab complete:
@@ -30,10 +30,9 @@ setopt hist_ignore_space # Ignore Commands that start with a space
 
 # Command Alias 
 setopt autocd # no need to type cd before changing directory
-
 # For colors and all files (excluding . and ..) when using ls
-# alias ls="ls --color=auto -A"
-# exa is an ls alternative with better colored output.
+#alias ls="ls --color=auto -A"
+# exa is an ls alternative with better colors.
 alias ls="exa -a"
 # Grep Colors
 alias grep="grep --color=auto"
@@ -46,7 +45,10 @@ alias rm="rm -i"
 alias neomutt="mailsync && neomutt"
 # Terminal weather forecast based on IP location
 alias weather="curl wttr.in"
-
+# Move to USB drive
+alias usb="cd /media/usb_drive"
+# Routine Vimwiki git Push
+alias wikipush="/media/usb_drive/Scripts/wikipush.sh"
 # Switched to neovim 2022-11-08
 alias vim="nvim"
 # Load syntax highlighting and autosuggestions; should be last.
