@@ -31,7 +31,7 @@ URxvt*bolditalicFont: xft:Fira Code:bolditalic:size=12
 !Disable hideous scrollbar
 URxvt*scrollBar:  off 
 !Able to scroll longer output
-URxvt*savelines:  10000
+URxvt*saveLines:  10000
 
 !-------------------------
 ! Colors - Bad_Wolf 
