@@ -1,6 +1,7 @@
 auto-reload yes
 reload-threads 50
 reload-time 60
+text-width 80
 
 show-read-feeds no
 show-read-articles no
