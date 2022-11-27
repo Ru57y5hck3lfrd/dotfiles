@@ -1,5 +1,5 @@
 # Set up prompt.
-# Colors are set as Gruv-Box dark, a little too colorful, but whatever. :)
+# Colors are set as Bad_Wolf dark, a little too colorful, but whatever. :)
 PS1="%F{#c7915b}[%F{#aeee00}%n%f%F{#fade3e}@%F{#ffa724}%M %F{#0a9dff}%~%f%F{#c7915b}]%F "
 autoload -U colors && colors # Load colors
 
@@ -47,10 +47,9 @@ alias neomutt="mailsync && neomutt"
 alias weather="curl wttr.in"
 # Move to USB drive
 alias usb="cd /media/usb_drive"
-# Routine Vimwiki git Push
-alias wikipush="/media/usb_drive/Scripts/wikipush.sh"
 # Switched to neovim 2022-11-08
 alias vim="nvim"
+
 # Load syntax highlighting and autosuggestions; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
