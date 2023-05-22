@@ -1,5 +1,5 @@
 # Set up prompt.
-# Colors are set as Bad_Wolf dark, a little too colorful, but whatever. :)
+# Colors Badwolf Dark
 PS1="%F{#c7915b}[%F{#aeee00}%n%f%F{#fade3e}@%F{#ffa724}%M %F{#0a9dff}%~%f%F{#c7915b}]%F "
 autoload -U colors && colors # Load colors
 

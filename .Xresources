@@ -4,6 +4,9 @@
 !URxvt*faceSize: 11
 URxvt*eightBitInput: false
 
+! Fixes problem where 1st line of terminal starts halfway down screen.
+URxvt*geometry: 94x97
+
 !!!!! Terminus Font - pacman -S terminus-font
 
 !URxvt*font: xft:xos4 Terminus:medium:size=13:antialiasing=false
