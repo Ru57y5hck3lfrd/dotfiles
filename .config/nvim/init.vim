@@ -26,7 +26,7 @@ nnoremap t A
 set mouse=a "Adds mouse functionality
 
 set nocompatible
-syntax on " Syntax highlighting
+"syntax on " Syntax highlighting
 filetype indent on 
 set ignorecase " If all lowercase, case insensitive search
 set smartcase " If one or more upper-case, case sensitive search
@@ -55,11 +55,26 @@ set ttyfast
 filetype plugin on " Allow Plugins
 call plug#begin()
 Plug 'vimwiki/vimwiki'
-"testing start
 Plug 'preservim/nerdtree'
 Plug 'lukas-reineke/indent-blankline.nvim'
-"testing end
+
+" testing start
+Plug 'morhetz/gruvbox'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
+set background=dark
+colorscheme gruvbox
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "all",
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
+
+" testing end
 
 " Sets vimwiki to use reqular markdown instead of vimwiki's markdown
 let g:vimwiki_list = [{'path': '/home/harrison/backup/my_gits/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
